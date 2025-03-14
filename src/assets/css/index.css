@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    min-height: 100vh;
+    min-height: 100svh;
+    height: 100%;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 4rem;
+  }
+}
+
+@layer components {
+  .container {
+    max-width: 125rem;
+
+    @apply w-[1200px] lg:w-[1000px] md:w-full;
+  }
+}

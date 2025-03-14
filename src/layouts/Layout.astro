@@ -1,0 +1,19 @@
+---
+import DefaultHead from "./DefaultHead.astro"
+import Header from "./Header.astro"
+import Footer from "./Footer.astro"
+import "@/assets/css/index.css"
+---
+
+<!doctype html>
+<html lang="en">
+  <DefaultHead {...Astro.props} />
+
+  <body>
+    <Header />
+    <slot />
+    <Footer />
+  </body>
+</html>
+
+<style></style>
